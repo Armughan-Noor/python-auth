@@ -15,7 +15,7 @@ app.config.from_pyfile('config.py')
 db = SQLAlchemy(app)
 
 
-# Define models
+# Define models Update
 roles_users = db.Table(
     'roles_users',
     db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),
